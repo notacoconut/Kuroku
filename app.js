@@ -10,9 +10,9 @@ app.set('views', path.join(__dirname, 'src\\views'));
 
 app.use(favicon());
 app.use(routes.router);
-app.use('/static', express.static(path.join(__dirname ,'public')));
+app.use('/static', express.static(path.join(__dirname,'public')));
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
 	console.log('The frontend server is now running on port 3000!');
 });
 
