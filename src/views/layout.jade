@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+		include ./partials/_head.jade
+
+		body#page-top
+			include ./partials/_nav.jade
+			block content
+
+			script(src='"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"')
+			// Bootstrap Core JavaScript
+			script(src='/static/js/bootstrap.min.js')
+			// Plugins JavaScript
+			// Custom Theme JavaScript
+			script(src='/static/js/creative.js')
