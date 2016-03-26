@@ -1,0 +1,30 @@
+extends ../layout.jade
+
+block content
+	section.row
+		h3.col-md-12.text-center Sign up!
+		div.col-xs-offset-2.col-xs-8.col-md-offset-4.col-md-4
+			form(name='userForm', novalidate autocomplete='off').signin.form-horizontal
+				fieldset
+					div.form-group
+						div.input-group.inputgroup-lg
+							span.input-group-addon
+								i.text-muted.glyphicon.glyphicon-pencil
+							input(type='text' require id='firstName' name='firstName' placeholder='First Name').form-control
+					div.form-group
+						div.input-group.inputgroup-lg
+							span.input-group-addon
+								i.text-muted.glyphicon.glyphicon-pencil
+							input(type='text' require id='lastName' name='lastName' placeholder='Last Name').form-control
+					div.form-group
+						div.input-group.inputgroup-lg
+							span.input-group-addon
+								i.text-muted.glyphicon.glyphicon-user
+							input(type='text' require id='email' name='email' placeholder='E-mail address').form-control
+					div.form-group
+						div.input-group.inputgroup-lg
+							span.input-group-addon
+								i.text-muted.glyphicon.glyphicon-lock
+							input(type='text' require id='password' name='password' placeholder='Password').form-control
+					div.text-center.form-group
+						button(type='submit').btn.btn-large.btn-block.btn-success Register Now
